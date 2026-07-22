@@ -1,2 +1,28 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> hmm </title>
+    </head>
+    <body style="background-color:powderblue;">
+     <!--   <h1>This is my title</h1><p>this is my first website without the use of AI and i already love it!</p>-->
+      <!--- // <img src= "my_image.jpeg" alt="my image" width="500">
+       //<video controls src=" my_video.mp4"></video>-->
+
+        <!--<table><th>1 2 3 4 </th>
+        <tr><th>1 2 3 </th></tr>
+            <h1><p style="color:rgb(17, 210, 220);"> shaan</p></h1>
+         <button><p style="color:red;"></pstyle>home page</p></button> 
+        </table>
+          <a href="https://www.jiohotstar.com">visit jiohotstar</a>
+            <button>login</button>
+        </td>
+        <button><p title="student credentials"></p>student</button>-->
+        <h1><p style="color:blue;" width="200px">STUDENTHUB</p></h1>
+        <h1 style="font-size:100px;">STUDENTHUB</h1>
+
+        <a a href="index.html">index</a>
+        <br>
+        <a a href="timetable.html">timetable</a><br>
+        <a a href="timetable.html">timetable</a>
+    </body>
+</html>

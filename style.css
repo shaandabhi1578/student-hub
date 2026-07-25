@@ -50,5 +50,20 @@ button{
     text-align:center;
     transition:.3s;
 }
+.first-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:150px;
+    height:150px;
+    border-radius:20px;
+    color:rgb(181, 108, 120);
+    background-color:#f5e4d8;
+    text-align:center;
+}
+
+
+
 
 

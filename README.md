@@ -1,20 +1,151 @@
-# StudentHub 📚
+# StudentHub Portal
 
-StudentHub is a student portal website designed to organize important academic information in one place. It provides students with easy access to pages like attendance, timetable, and student-related information.
+## Project Description
 
-## 🚀 Features
+StudentHub Portal is a simple website made using HTML and CSS.
 
-- 🏠 Home Page
-- 👨‍🎓 About Us Page
-- 📅 Timetable Page
-- 📊 Attendance Page
-- 🎨 Custom CSS styling
-- 📱 Simple and user-friendly interface
+It helps students access different sections like Timetable, Attendance, Profile, Courses, Notice Board, and Contact from one place.
 
-## 🛠️ Technologies Used
+This project was created as part of the Web Development and Frameworks (WDF) course.
+
+---
+
+## Features
+
+- Home Page
+- Timetable
+- Attendance
+- About Us
+- Profile
+- Notice Board
+- Feedback
+- Contact
+- Admin
+- Login
+- Courses
+
+---
+
+## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript (Coming Soon)
+- Visual Studio Code
+- Git & GitHub
 
-## 📂 Project Structure
+---
+
+## How to Run
+
+1. Download the project.
+2. Open the project folder.
+3. Open `index.html` in any web browser.
+
+---
+
+## Sitemap
+
+```
+                 STUDENTHUB
+                      │
+        ┌─────────────┼─────────────┐
+        │             │             │
+      Home        About Us      Contact
+        │
+        ├──────────────┐
+        │              │
+    Timetable     Attendance
+        │              │
+     Courses       Profile
+        │              │
+     Login      Notice Board
+        │
+      Feedback
+        │
+      Admin
+```
+
+---
+
+## Low-Fidelity Wireframe
+
+```
+-------------------------------------------------
+                STUDENTHUB
+                Home Page
+-------------------------------------------------
+           [ Timetable ]
+           [ Attendance ]
+            [ About Us ]
+             [ Profile ]
+          [ Notice Board ]
+            [ Feedback ]
+             [ Contact ]
+              [ Admin ]
+              [ Login ]
+             [ Courses ]
+-------------------------------------------------
+          © 2026 StudentHub
+```
+
+---
+
+## Project Folder Structure
+
+```
+StudentHub/
+│
+├── index.html
+├── timetable.html
+├── attendance.html
+├── about-us.html
+├── profile.html
+├── notice-board.html
+├── feedback.html
+├── contact.html
+├── admin.html
+├── login.html
+├── courses.html
+│
+├── style.css
+│
+├── images/
+│
+└── README.md
+```
+
+---
+
+## Requirement Analysis
+
+### Functional Requirements
+
+The system should allow users to:
+
+- View the Home page.
+- View the Timetable.
+- Check Attendance.
+- View available Courses.
+- View their Profile.
+- Read notices on the Notice Board.
+- Read information on the About Us page.
+- Send feedback through the Feedback page.
+- View Contact information.
+- Access the Login page.
+- Access the Admin page.
+
+### Non-Functional Requirements
+
+- Simple and easy to use.
+- Clean and attractive interface.
+- Easy navigation between pages.
+- Fast loading webpages.
+- Compatible with modern web browsers.
+
+---
+
+## Author
+
+- **Name:** Shaan Dabhi
+- **Course:** B.Tech Computer Engineering
+- **Subject:** Web Development and Frameworks (WDF)

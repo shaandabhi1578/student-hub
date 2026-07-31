@@ -1,0 +1,26 @@
+*{
+    text-align:center;
+    
+    margin:0px;
+    padding:0px;
+    font-family:arial;
+}
+body{
+    margin-top:20px;
+    background-color:#EAB5C2;
+    color: #933B55;
+}
+span{
+    background-color: #F2E0D2;
+}
+.heade{
+    font-size:35px;
+}
+.info{
+    text-align:left;
+    font-size:20px;
+}
+.middle{
+    text-align:left;
+    font-size:30px;
+}

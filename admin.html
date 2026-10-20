@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>admin</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - StudentHub</title>
+        <link rel="stylesheet" href="admin.css">
     </head>
     <body>
-        <h1>this is admin</h1>
+        <div class="header">
+            <h1>STUDENTHUB</h1>
+            <h2>Administrative Control Panel</h2>
+        </div>
 
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="admin-card">
+            <h2>Admin Authentication</h2>
+            <form id="adminform" action="login.php" method="POST">
+                <label for="adminusername">Admin Username:</label>
+                <input type="text" id="adminusername" name="username" required placeholder="Enter admin username">
+
+                <label for="adminpassword">Password:</label>
+                <input type="password" id="adminpassword" name="password" required placeholder="Enter password">
+
+                <input type="submit" value="Authenticate & Login">
+            </form>
+        </div>
+
+        <footer>
+            <nav class="banana">© 2026 Student Hub</nav>
+        </footer>
+        <script src="script.js"></script>
     </body>
-   
 </html>

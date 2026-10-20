@@ -1,148 +1,276 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>studenthub</title>
-        <link rel="stylesheet" href="style.css">                                     <!--this is the link to the css file-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StudentHub - Student Academic Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #eebbc6;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #333333;
+                padding: 30px 20px;
+                text-align: center;
+                min-height: 100vh;
+            }
+            .header {
+                background-color: #933b55;
+                color: #ffffff;
+                padding: 24px 35px;
+                margin: 0 auto 35px auto;
+                max-width: 1100px;
+                border-radius: 20px;
+                box-shadow: 0 6px 20px rgba(147, 59, 85, 0.2);
+            }
+            .header-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            .logo-area {
+                text-align: left;
+            }
+            .logo-area h1 {
+                font-size: 32px;
+                letter-spacing: 1px;
+                margin: 0;
+                font-weight: 800;
+            }
+            .logo-area p {
+                font-size: 14px;
+                margin-top: 4px;
+                opacity: 0.9;
+            }
+            .top-nav {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            .top-nav a {
+                color: #fce7f3;
+                text-decoration: none;
+                font-size: 14.5px;
+                font-weight: 500;
+                padding: 8px 14px;
+                border-radius: 10px;
+                transition: background 0.2s, color 0.2s;
+            }
+            .top-nav a:hover {
+                background: rgba(255, 255, 255, 0.15);
+                color: #ffffff;
+            }
+            .top-nav .nav-btn {
+                background: rgba(255, 255, 255, 0.2);
+                font-weight: 600;
+            }
+            .top-nav .register-btn {
+                background: #ffffff;
+                color: #933b55;
+                font-weight: 700;
+            }
+            .top-nav .register-btn:hover {
+                background: #fce7f3;
+                color: #933b55;
+            }
+            .main-dashboard {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .big-cards-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+                gap: 22px;
+            }
+            .big-card {
+                background-color: #ffffff;
+                padding: 32px 36px;
+                border-radius: 20px;
+                text-align: left;
+                text-decoration: none;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+                border: 1.5px solid #fce7f3;
+                border-left: 8px solid #933b55;
+                transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 180px;
+            }
+            .big-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 28px rgba(147, 59, 85, 0.18);
+                border-color: #933b55;
+            }
+            .big-card h3 {
+                color: #933b55;
+                font-size: 23px;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            .big-card p {
+                color: #555555;
+                font-size: 15px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+            .card-action {
+                display: inline-block;
+                color: #933b55;
+                font-size: 14.5px;
+                font-weight: 700;
+                margin-top: auto;
+            }
+            .big-card:hover .card-action {
+                text-decoration: underline;
+            }
+            .banana {
+                background-color: #933b55;
+                color: #fce7f3;
+                font-size: 15px;
+                padding: 15px;
+                border-radius: 12px;
+                max-width: 1100px;
+                margin: 40px auto 0 auto;
+                text-align: center;
+            }
+            @media (max-width: 600px) {
+                .header-content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .big-cards-grid {
+                    grid-template-columns: 1fr;
+                }
+                .big-card {
+                    padding: 24px 20px;
+                }
+            }
+        </style>
     </head>
     <body>
-        <!--form parts-->
-        <!--
-        <form action="index.php" method="POST">                                     <!-- this sends the form to index.php--><!--
-        <label for="username">username:</label>
-        <input type="text" id="username" required minlength="4" placeholder="type your name"><br>         <!--required=pls fill in this field-->
-         <!--
-        <label for="password">password:</label>
-        <input type="password" id="password"><br>
-
-        <label for="phone">phone:</label>
-        <input type="tel" id="phone" placeholder="+91-9408487768" minlength="5" maxlength="15">
-        <br>
-
-        <label for="bday">Birthdate:</label>
-        <input type="date" id="bday"> <br>
-
-        <label for="quantity">quantity:</label>
-        <input type="number" id ="quantity" min="0" max="15" value="1"><br>
-
-
-        <input type="reset"><br>
-        <input type="submit">
-        </form>                                     -->
-            
-            <!--studenthub part-->
-            <div class="header">
-<<<<<<< Updated upstream
-            <div class="head">
-                <h1>STUDENTHUB</h1>
-                <h2> Home Page</h2>             
+        <!-- Header with Top-Right Navigation Links -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-area">
+                    <h1>STUDENTHUB</h1>
+                    <p>Student Academic Portal</p>
+                </div>
+                <nav class="top-nav">
+                    <a href="about-us.html">About Us</a>
+                    <a href="events.html">Campus Events</a>
+                    <a href="students.php">Students CRUD</a>
+                    <a href="admin_dashboard.php">Admin Panel</a>
+                    <a href="login.php" class="nav-btn">Login</a>
+                    <a href="register.html" class="nav-btn register-btn">Register</a>
+                </nav>
             </div>
-        </div>
-        <br><br>
-        <nav class="navbar">
-        <div class="card-container">
-            <div class="card">
-            <a href="timetable.html" class="strip">
-                <h1>📅 Timetable View Schedule</h1>
-            </a>
-            </div>
-            <div class="card">
-                <a href="attendence.html" class="strip"><h1>Attendance👑</h1></a>
-            </div>
-=======
-            <h1 >STUDENTHUB</h1>
-            <h2> Home Page</h2>
-        </div>
-<<<<<<< Updated upstream
-        <nav class="strip">
-        <div>
-            <div class="card">
-            <a href="timetable.html" class="strip">📅 Timetable View Schedule</a>
-            </div>
-            <br><br>
-            <a href="attendence.html" class="strip">Attendance</a>
-
-            <a href="about-us.html" class="strip">About Us</a>
-=======
-        <nav style="background-color:#baabbe; text-align:center; font-size:35px;">
-        <div >
-            <h1 style="color:#933b55; text-align:center; margin:15px;"> Home Page</h1>
-            <a href="about-us.html" style=" color:pink;">
-                about us
-            </a>
-            <a href="attendence.html" style="color:pink; text-align:center; margin:15px;">
-                attendance
-            </a>
-            <a href="timetable.html" style="color:pink;">
-            <button style="font-size:20px; background-color:pink; color:#933b55; border-radius:20px; text-align:center; width=30px;">Timetable
+        </header>
+        
+        <!-- Main Dashboard: Big Prominent Academic Feature Cards -->
+        <main class="main-dashboard">
+            <div class="big-cards-grid">
                 
-            </button>
-            </a>
-                
-            
-            <a href="attendence.html" style="color:pink;">
-            <button style="font-size:20px; background-color:pink; color:#933b55; border-radius:20px; text-align:center; width=30px;">Attendance  
+                <!-- 1. Timetable -->
+                <a href="timetable.html" class="big-card">
+                    <div>
+                        <h3>Timetable</h3>
+                        <p>Access your complete weekly lecture schedules, lab session timings, and assigned room numbers.</p>
+                    </div>
+                    <span class="card-action">View Schedule →</span>
+                </a>
 
-            </button>
-            </a>
+                <!-- 2. Attendance -->
+                <a href="attendence.html" class="big-card">
+                    <div>
+                        <h3>Attendance</h3>
+                        <p>Track real-time subject-wise lecture attendance, aggregate percentages, and examination eligibility.</p>
+                    </div>
+                    <span class="card-action">Check Attendance →</span>
+                </a>
 
-            <a href="about-us.html" style="color:pink;">
-            <button style="font-size:20px; background-color:pink; color:#933b55; border-radius:20px; text-align:center; width=30px;">About us 
+                <!-- 3. Notice Board -->
+                <a href="notice-board.html" class="big-card">
+                    <div>
+                        <h3>Notice Board</h3>
+                        <p>Stay up to date with official departmental circulars, exam schedule releases, and institutional alerts.</p>
+                    </div>
+                    <span class="card-action">Read Announcements →</span>
+                </a>
 
-            </button>
-            </a>
->>>>>>> Stashed changes
->>>>>>> Stashed changes
-            
-            <div class="card">
-                <a href="about-us.html" class="strip"><h1>About Us👀</h1></a>
-            </div>
-            
-            <div class="card">
-                <a href="profile.html" class="strip"><h1>Profile💻</h1></a>
-            </div>
-            
-            <div class="card">
-                <a href="notice-board.html" class="strip">        
-                    <h2>NOTICE-BOARD⭐️</h2> 
-                    <h2>make announcements🎤</h2>
-                    <h2>event planning🪩</h2> 
+                <!-- 4. Campus Events -->
+                <a href="events.html" class="big-card">
+                    <div>
+                        <h3>Campus Events</h3>
+                        <p>Explore technical symposiums, hackathons, sports tournaments, and student club workshops.</p>
+                    </div>
+                    <span class="card-action">Browse Events →</span>
+                </a>
+
+                <!-- 5. Courses -->
+                <a href="courses.html" class="big-card">
+                    <div>
+                        <h3>Courses</h3>
+                        <p>Browse semester course catalogs, credit breakdowns, syllabus objectives, and faculty instructors.</p>
+                    </div>
+                    <span class="card-action">Explore Catalog →</span>
+                </a>
+
+                <!-- 6. Student Profile -->
+                <a href="profile.php" class="big-card">
+                    <div>
+                        <h3>Student Profile &amp; Dashboard</h3>
+                        <p>Access your authenticated student dashboard, enrolled courses, and registered campus events.</p>
+                    </div>
+                    <span class="card-action">Open Profile →</span>
+                </a>
+
+                <!-- 7. Practical 11: Students CRUD -->
+                <a href="students.php" class="big-card">
+                    <div>
+                        <h3>Student Management CRUD</h3>
+                        <p>Practical 11: Add, search, filter, edit, soft-delete, and export 20+ student records to CSV.</p>
+                    </div>
+                    <span class="card-action">Manage Students →</span>
+                </a>
+
+                <!-- 8. Practical 12: Event Management & Posters -->
+                <a href="manage_events.php" class="big-card">
+                    <div>
+                        <h3>Event Management &amp; Posters</h3>
+                        <p>Practical 12: Manage campus activities with secure poster image upload, MIME validation, and status controls.</p>
+                    </div>
+                    <span class="card-action">Manage Events →</span>
+                </a>
+
+                <!-- 9. Practical 13: Fetch API Async CRUD -->
+                <a href="students_ajax.php" class="big-card">
+                    <div>
+                        <h3>Fetch API Async CRUD</h3>
+                        <p>Practical 13: Experience zero-reload asynchronous student operations with live 300ms debounced search.</p>
+                    </div>
+                    <span class="card-action">Launch Async CRUD →</span>
+                </a>
+
+                <!-- 10. Practical 14: Admin Analytics & Audit Logs -->
+                <a href="admin_dashboard.php" class="big-card">
+                    <div>
+                        <h3>Admin Dashboard &amp; Audit Logs</h3>
+                        <p>Practical 14: Role-based administration with live aggregation, user status toggle, and security audit trail.</p>
+                    </div>
+                    <span class="card-action">Open Admin Dashboard →</span>
                 </a>
             </div>
+        </main>
 
-            
-        </div>
-        </nav>
-        
-            
-        
-
-
-        <!--javascript part-->
-        <!--
-        <script> 
-            str=5;
-            str++;
-            printthook();
-            function printthook(){
-                document.write('thoook');
-            }
-             document.write(' shaan dabhi')
-        </script>
-         <input type="button" value="click" onclick="printthook()"/>
-    -->
-        
-    
-    
-    
-    
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <footer>
             <nav class="banana">© 2026 Student Hub</nav>
         </footer>

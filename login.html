@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>login</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - StudentHub</title>
+        <link rel="stylesheet" href="login.css">
     </head>
     <body>
-        <h1>this is login page</h1>
+        <div class="header">
+            <h1>STUDENTHUB</h1>
+            <h2>Student Login Portal</h2>
+        </div>
 
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="login-card">
+            <h2>Account Login</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <label for="username">Username / Enrollment:</label>
+                <input type="text" id="username" name="username" required minlength="4" placeholder="Enter username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter password">
+
+                <label for="phone">Phone (Optional):</label>
+                <input type="tel" id="phone" placeholder="+91-9408487768" minlength="5" maxlength="15">
+
+                <label for="bday">Birthdate (Optional):</label>
+                <input type="date" id="bday">
+
+                <div class="btn-row">
+                    <input type="submit" value="Sign In">
+                    <input type="reset" value="Reset">
+                </div>
+
+                <p class="register-prompt">
+                    Don't have an account? <a href="register.html">Register here</a>
+                </p>
+            </form>
+        </div>
+
+        <footer>
+            <nav class="banana">© 2026 Student Hub</nav>
+        </footer>
+        <script src="script.js"></script>
     </body>
-   
 </html>

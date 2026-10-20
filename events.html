@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - StudentHub</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="header">
+        <h1>STUDENTHUB</h1>
+        <h2>Campus Events & Activities</h2>
+    </div>
+
+    <div class="events-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <!-- Controls: Search, Filter, Sort -->
+        <div class="controls-bar">
+            <input type="text" id="eventSearchInput" placeholder="Search events by title or keyword..." aria-label="Search events">
+            
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="All">All Categories</option>
+                <option value="Technical">Technical</option>
+                <option value="Cultural">Cultural</option>
+                <option value="Sports">Sports</option>
+                <option value="Academic">Academic</option>
+            </select>
+
+            <select id="sortSelect" aria-label="Sort events">
+                <option value="date-asc">Date (Earliest First)</option>
+                <option value="date-desc">Date (Latest First)</option>
+                <option value="title-asc">Title (A to Z)</option>
+                <option value="seats-desc">Seats (High to Low)</option>
+            </select>
+        </div>
+
+        <!-- Dynamic Content Area -->
+        <div id="loadingState">Loading events from server...</div>
+        <div id="errorState" style="display: none;"></div>
+        <div id="emptyState" style="display: none;">No events match your criteria. Try adjusting your filters.</div>
+
+        <div id="eventsGrid" class="event-grid"></div>
+
+        <!-- Pagination Controls -->
+        <div id="paginationBar" class="pagination-bar" style="display: none;"></div>
+    </div>
+
+    <footer>
+        <nav class="banana">© 2026 Student Hub</nav>
+    </footer>
+
+    <script src="events.js"></script>
+</body>
+</html>

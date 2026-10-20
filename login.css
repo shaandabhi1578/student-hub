@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eebbc6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    padding: 30px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #933b55;
+    color: #ffffff;
+    padding: 24px 20px;
+    margin: 0 auto 25px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(147, 59, 85, 0.2);
+}
+
+.header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.header h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #933b55;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 25px;
+    transition: 0.2s;
+}
+
+.back-link:hover {
+    background-color: #7b2e45;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.login-card h2 {
+    color: #933b55;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 11px 14px;
+    margin-bottom: 16px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #933b55;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    flex: 1;
+    background-color: #933b55;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #7b2e45;
+}
+
+input[type="reset"] {
+    background-color: #f3f4f6;
+    color: #374151;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type="reset"]:hover {
+    background-color: #e5e7eb;
+}
+
+.register-prompt {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-prompt a {
+    color: #933b55;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.banana {
+    background-color: #933b55;
+    color: pink;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 35px auto 0 auto;
+}

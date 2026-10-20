@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>feedback</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback - StudentHub</title>
+        <link rel="stylesheet" href="feedback.css">
     </head>
     <body>
-        <h1>this is feedback</h1>
+        <div class="header">
+            <h1>STUDENTHUB</h1>
+            <h2>Student Feedback Form</h2>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="feedback-card">
+            <h2>Share Your Feedback</h2>
+            <form id="feedbackForm" onsubmit="event.preventDefault(); alert('Thank you for your feedback!'); this.reset();">
+                <label for="fbName">Full Name:</label>
+                <input type="text" id="fbName" placeholder="Your name" required>
+
+                <label for="fbCategory">Category:</label>
+                <select id="fbCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Academic">Academic Curriculum</option>
+                    <option value="Facilities">Campus & Lab Facilities</option>
+                    <option value="Portal">StudentHub Web Portal</option>
+                    <option value="Other">Other Suggestions</option>
+                </select>
+
+                <label for="fbComments">Comments / Suggestions:</label>
+                <textarea id="fbComments" rows="4" placeholder="Write your feedback here..." required></textarea>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+
+        <footer>
+            <nav class="banana">© 2026 Student Hub</nav>
+        </footer>
     </body>
 </html>

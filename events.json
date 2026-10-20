@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Annual Tech Symposium 2026",
+    "category": "Technical",
+    "date": "2026-10-15",
+    "location": "Main Auditorium",
+    "seats": 120,
+    "description": "A day-long symposium featuring paper presentations and tech talks by industry leaders."
+  },
+  {
+    "id": 2,
+    "title": "Web Development Hackathon",
+    "category": "Technical",
+    "date": "2026-10-22",
+    "location": "Computer Lab 3",
+    "seats": 60,
+    "description": "Build full stack web apps in 12 hours. Exciting prizes for top teams."
+  },
+  {
+    "id": 3,
+    "title": "Inter-College Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-10-28",
+    "location": "College Sports Ground",
+    "seats": 200,
+    "description": "Annual sports meet with teams participating from across the state."
+  },
+  {
+    "id": 4,
+    "title": "Cultural Night and Musical Eve",
+    "category": "Cultural",
+    "date": "2026-11-05",
+    "location": "Open Air Amphitheatre",
+    "seats": 350,
+    "description": "An evening of dance, drama, and live musical band performances."
+  },
+  {
+    "id": 5,
+    "title": "AI and Machine Learning Workshop",
+    "category": "Technical",
+    "date": "2026-11-12",
+    "location": "Seminar Hall A",
+    "seats": 80,
+    "description": "Hands-on training session on Python, pandas, and basic neural networks."
+  },
+  {
+    "id": 6,
+    "title": "Badminton Championship",
+    "category": "Sports",
+    "date": "2026-11-18",
+    "location": "Indoor Sports Complex",
+    "seats": 50,
+    "description": "Singles and doubles knockout matches for boys and girls."
+  },
+  {
+    "id": 7,
+    "title": "Cybersecurity Awareness Seminar",
+    "category": "Technical",
+    "date": "2026-11-25",
+    "location": "Audio Visual Room",
+    "seats": 90,
+    "description": "Learn ethical hacking basics and how to safeguard personal data online."
+  },
+  {
+    "id": 8,
+    "title": "Photography Exhibition",
+    "category": "Cultural",
+    "date": "2026-12-02",
+    "location": "Art Gallery Hall",
+    "seats": 150,
+    "description": "Exhibition of nature, portrait, and street photography captured by students."
+  },
+  {
+    "id": 9,
+    "title": "Robotics Maze Solver Challenge",
+    "category": "Technical",
+    "date": "2026-12-08",
+    "location": "Robotics Lab",
+    "seats": 40,
+    "description": "Autonomous line follower and maze solving bot competition."
+  },
+  {
+    "id": 10,
+    "title": "Annual Blood Donation Camp",
+    "category": "Social",
+    "date": "2026-12-14",
+    "location": "Student Activity Center",
+    "seats": 300,
+    "description": "Organized in collaboration with the Red Cross Society."
+  },
+  {
+    "id": 11,
+    "title": "Debate and Elocution Contest",
+    "category": "Cultural",
+    "date": "2026-12-20",
+    "location": "Conference Hall B",
+    "seats": 70,
+    "description": "Topic: Artificial Intelligence vs Human Creativity in Education."
+  },
+  {
+    "id": 12,
+    "title": "Table Tennis Tournament",
+    "category": "Sports",
+    "date": "2027-01-08",
+    "location": "Indoor Complex",
+    "seats": 45,
+    "description": "Fast-paced tournament open to all department batches."
+  },
+  {
+    "id": 13,
+    "title": "Cloud Computing Fundamentals",
+    "category": "Technical",
+    "date": "2027-01-15",
+    "location": "Computer Lab 1",
+    "seats": 65,
+    "description": "Introduction to deploying simple web applications on cloud instances."
+  },
+  {
+    "id": 14,
+    "title": "Drama and Street Play Fest",
+    "category": "Cultural",
+    "date": "2027-01-22",
+    "location": "Campus Central Plaza",
+    "seats": 250,
+    "description": "Street plays focusing on social themes and environmental awareness."
+  },
+  {
+    "id": 15,
+    "title": "Campus Placement Resume Workshop",
+    "category": "Academic",
+    "date": "2027-01-29",
+    "location": "Seminar Hall B",
+    "seats": 110,
+    "description": "Session by alumni on resume building and technical interview prep."
+  },
+  {
+    "id": 16,
+    "title": "Chess Open Tournament",
+    "category": "Sports",
+    "date": "2027-02-05",
+    "location": "Library Reading Hall",
+    "seats": 40,
+    "description": "Rapid chess tournament with classical time control for finals."
+  }
+]

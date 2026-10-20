@@ -1,12 +1,75 @@
-<doctype html>
-    <htmnl>
-        <head>
-            <title>attendance</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-            <h1>this is attendance!</h1>
-        </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attendance - StudentHub</title>
+        <link rel="stylesheet" href="attendence.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>STUDENTHUB</h1>
+            <h2>Student Attendance Tracker</h2>
+        </div>
 
-    </html>
-</doctype>
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="attendance-card">
+            <div class="stat-box">
+                <div class="stat-item">
+                    <h3>88.5%</h3>
+                    <p>Overall Attendance</p>
+                </div>
+                <div class="stat-item">
+                    <h3>142 / 160</h3>
+                    <p>Total Classes Attended</p>
+                </div>
+                <div class="stat-item">
+                    <span class="badge">Eligible for Exams</span>
+                    <p style="margin-top: 6px;">Status</p>
+                </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Total Lectures</th>
+                        <th>Attended</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development Frameworks (WDF)</td>
+                        <td>40</td>
+                        <td>36</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamental Data Structures (FDSA)</td>
+                        <td>42</td>
+                        <td>38</td>
+                        <td>90.4%</td>
+                    </tr>
+                    <tr>
+                        <td>Core Java Programming</td>
+                        <td>38</td>
+                        <td>33</td>
+                        <td>86.8%</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript & Client Side Scripting</td>
+                        <td>40</td>
+                        <td>35</td>
+                        <td>87.5%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <nav class="banana">© 2026 Student Hub</nav>
+        </footer>
+    </body>
+</html>
